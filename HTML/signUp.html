@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">شركة خدمات التبريد والتكييف</title>
+    <meta name="description" data-i18n="meta_description_1" content="قم بإنشاء حساب جديد بسهولة وسرعة على موقعنا للاستفادة من جميع المزايا والخدمات المميزة">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
+    <link rel="stylesheet" href="../CSS/signUp.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Navigation principale">
+            <div class="nav-container">
+                <div class="language-selector">
+                    <button id="languageButton" class="language-button" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Sélectionner une langue">
+                        <span id="currentLanguage">AR</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <ul id="languageDropdown" class="language-dropdown" role="menu" aria-labelledby="languageButton" hidden>
+                        <li class="language-option" role="menuitem" tabindex="0" data-lang="fr">
+                            <i class="fas fa-check" aria-hidden="true"></i> 
+                            <span data-i18n="francais">الفرنسية</span>
+                        </li>
+                        <li class="language-option" role="menuitem" tabindex="0" data-lang="ar">
+                            <i class="fas fa-check" aria-hidden="true"></i> 
+                            <span data-i18n="arabe">العربية</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <label class="switch" aria-label="Basculer entre le mode clair et sombre">
+                    <input type="checkbox" class="input" aria-checked="false">
+                    <span class="slider">
+                        <span class="sun" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                                <g fill="#ffd43b">
+                                    <circle r="5" cy="12" cx="12"/>
+                                    <path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"/>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="moon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="16" height="16">
+                                <path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/>
+                            </svg>
+                        </span>
+                    </span>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content" role="main">
+        <div class="page-wrapper">
+            <article class="auth-card">
+                <header class="auth-card-header">
+                    <h1 data-i18n="sign">إنشاء حساب</h1>
+                    <p data-i18n="description">انضم إلى شركة خدمات التبريد واستمتع بخدماتنا المتميزة</p>
+                </header>
+
+                <div class="auth-card-body">
+                    <form id="signupForm" novalidate autocomplete="on" action="../PHP/process-signUp.php" method="post">
+                        <div id="formErrors" class="error-summary" role="alert" aria-live="assertive" hidden>
+                            <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+                            <span data-i18n="form_errors">هناك أخطاء في النموذج:</span>
+                            <ul id="errorList"></ul>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName"  data-i18n="nom">الاسم العائلي</label>
+                                <div class="input-group">
+                                    <span class="input-icon" aria-hidden="true">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                    <input type="text" id="firstName" name="firstName" class="input-control" data-i18n-placeholder="nom_placeholder" placeholder="الاسم العائلي" required autocomplete="family-name" aria-describedby="firstName-error">
+                                </div>
+                                <div id="firstName-error" class="error-message" role="alert" aria-live="polite"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastName" data-i18n="prenom">الاسم الشخصي</label>
+                                <div class="input-group">
+                                    <span class="input-icon" aria-hidden="true">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                    <input type="text" id="lastName" name="lastName" class="input-control" data-i18n-placeholder="prenom_placeholder" placeholder="الاسم الشخصي" required autocomplete="given-name" aria-describedby="lastName-error">
+                                </div>
+                                <div id="lastName-error" class="error-message" role="alert" aria-live="polite"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" data-i18n="email_label">البريد الإلكتروني</label>
+                            <div class="input-group">
+                                <span class="input-icon" aria-hidden="true">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                                <input type="email" id="email" name="email" class="input-control" data-i18n-placeholder="email_placeholder" placeholder="أدخل بريدك الإلكتروني" required autocomplete="email" aria-describedby="email-error">
+                            </div>
+                            <div id="email-error" class="error-message" role="alert" aria-live="polite"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" data-i18n="phone_label">رقم الهاتف</label>
+                            <div class="phone-input-container">
+                                <div class="custom-dropdown">
+                                    <button type="button" class="selected-option" id="selectedCountry" aria-expanded="false" aria-haspopup="listbox">
+                                        <img src="https://flagcdn.com/w20/sa.png" alt="" class="flag-img" width="20" height="15" loading="lazy">
+                                        <span class="country-code">+966</span>
+                                    </button>
+                                    <ul class="dropdown-options" id="countryOptions" role="listbox" aria-labelledby="selectedCountry" hidden>
+                                        <div class="option" data-value="+966" data-country-code="sa">
+                                            <img src="https://flagcdn.com/w20/sa.png" alt="السعودية" class="flag-img" loading="lazy">
+                                            <span class="country-code">+966</span>
+                                          </div>
+                                          <div class="option" data-value="+971" data-country-code="ae">
+                                            <img src="https://flagcdn.com/w20/ae.png" alt="الإمارات" class="flag-img" loading="lazy">
+                                            <span class="country-code">+971</span>
+                                          </div>
+                                          <div class="option" data-value="+965" data-country-code="kw">
+                                            <img src="https://flagcdn.com/w20/kw.png" alt="الكويت" class="flag-img" loading="lazy">
+                                            <span class="country-code">+965</span>
+                                          </div>
+                                          <div class="option" data-value="+974" data-country-code="qa">
+                                            <img src="https://flagcdn.com/w20/qa.png" alt="قطر" class="flag-img" loading="lazy">
+                                            <span class="country-code">+974</span>
+                                          </div>
+                                          <div class="option" data-value="+973" data-country-code="bh">
+                                            <img src="https://flagcdn.com/w20/bh.png" alt="البحرين" class="flag-img" loading="lazy">
+                                            <span class="country-code">+973</span>
+                                          </div>
+                                          <div class="option" data-value="+968" data-country-code="om">
+                                            <img src="https://flagcdn.com/w20/om.png" alt="عُمان" class="flag-img" loading="lazy">
+                                            <span class="country-code">+968</span>
+                                          </div>
+                                          <div class="option" data-value="+20" data-country-code="eg">
+                                            <img src="https://flagcdn.com/w20/eg.png" alt="مصر" class="flag-img" loading="lazy">
+                                            <span class="country-code">+20</span>
+                                          </div>
+                                          <div class="option" data-value="+962" data-country-code="jo">
+                                            <img src="https://flagcdn.com/w20/jo.png" alt="الأردن" class="flag-img" loading="lazy">
+                                            <span class="country-code">+962</span>
+                                          </div>
+                                          <div class="option" data-value="+964" data-country-code="iq">
+                                            <img src="https://flagcdn.com/w20/iq.png" alt="العراق" class="flag-img" loading="lazy">
+                                            <span class="country-code">+964</span>
+                                          </div>
+                                          <div class="option" data-value="+967" data-country-code="ye">
+                                            <img src="https://flagcdn.com/w20/ye.png" alt="اليمن" class="flag-img" loading="lazy">
+                                            <span class="country-code">+967</span>
+                                          </div>
+                                          <div class="option" data-value="+970" data-country-code="ps">
+                                            <img src="https://flagcdn.com/w20/ps.png" alt="فلسطين" class="flag-img" loading="lazy">
+                                            <span class="country-code">+970</span>
+                                          </div>
+                                          <div class="option" data-value="+963" data-country-code="sy">
+                                            <img src="https://flagcdn.com/w20/sy.png" alt="سوريا" class="flag-img" loading="lazy">
+                                            <span class="country-code">+963</span>
+                                          </div>
+                                          <div class="option" data-value="+961" data-country-code="lb">
+                                            <img src="https://flagcdn.com/w20/lb.png" alt="لبنان" class="flag-img" loading="lazy">
+                                            <span class="country-code">+961</span>
+                                          </div>
+                                          <div class="option" data-value="+218" data-country-code="ly">
+                                            <img src="https://flagcdn.com/w20/ly.png" alt="ليبيا" class="flag-img" loading="lazy">
+                                            <span class="country-code">+218</span>
+                                          </div>
+                                          <div class="option" data-value="+249" data-country-code="sd">
+                                            <img src="https://flagcdn.com/w20/sd.png" alt="السودان" class="flag-img" loading="lazy">
+                                            <span class="country-code">+249</span>
+                                          </div>
+                                          <div class="option" data-value="+216" data-country-code="tn">
+                                            <img src="https://flagcdn.com/w20/tn.png" alt="تونس" class="flag-img" loading="lazy">
+                                            <span class="country-code">+216</span>
+                                          </div>
+                                          <div class="option" data-value="+213" data-country-code="dz">
+                                            <img src="https://flagcdn.com/w20/dz.png" alt="الجزائر" class="flag-img" loading="lazy">
+                                            <span class="country-code">+213</span>
+                                          </div>
+                                          <div class="option" data-value="+212" data-country-code="ma">
+                                            <img src="https://flagcdn.com/w20/ma.png" alt="المغرب" class="flag-img" loading="lazy">
+                                            <span class="country-code">+212</span>
+                                          </div>
+                                          <div class="option" data-value="+222" data-country-code="mr">
+                                            <img src="https://flagcdn.com/w20/mr.png" alt="موريتانيا" class="flag-img" loading="lazy">
+                                            <span class="country-code">+222</span>
+                                          </div>
+                                          <div class="option" data-value="+253" data-country-code="dj">
+                                            <img src="https://flagcdn.com/w20/dj.png" alt="جيبوتي" class="flag-img" loading="lazy">
+                                            <span class="country-code">+253</span>
+                                          </div>
+                                          <div class="option" data-value="+252" data-country-code="so">
+                                            <img src="https://flagcdn.com/w20/so.png" alt="الصومال" class="flag-img" loading="lazy">
+                                            <span class="country-code">+252</span>
+                                          </div>
+                                          <div class="option" data-value="+269" data-country-code="km">
+                                            <img src="https://flagcdn.com/w20/km.png" alt="جزر القمر" class="flag-img" loading="lazy">
+                                            <span class="country-code">+269</span>
+
+                                          </div>
+                                          
+                                    </ul>
+                                    <input type="hidden" id="countryCode" name="countryCode" value="+966">
+                                </div>
+                                <input type="tel" id="phone" name="phone" class="phone-input" data-i18n-placeholder="phone_placeholder" placeholder="أدخل رقم هاتفك" required autocomplete="tel" aria-describedby="phone-error">
+                            </div>
+                            <div id="phone-error" class="error-message" role="alert" aria-live="polite" data-i18n="phone_error">الرجاء إدخال رقم هاتف صحيح</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password" data-i18n="password_label">كلمة المرور</label>
+                            <div class="input-group">
+                                <span class="input-icon" aria-hidden="true">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                                <input type="password" id="password" name="password" class="input-control" data-i18n-placeholder="password_placeholder" placeholder="أدخل كلمة المرور" required autocomplete="new-password" aria-describedby="password-error password-help">
+                                <button type="button" id="togglePassword" class="password-toggle" aria-label="إظهار/إخفاء كلمة المرور">
+                                    <i class="fas fa-eye-slash" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div id="password-error" class="error-message" role="alert" aria-live="polite"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirmPassword" data-i18n="confirm_password_label">تأكيد كلمة المرور</label>
+                            <div class="input-group">
+                                <span class="input-icon" aria-hidden="true">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                                <input type="password" id="confirmPassword" name="confirmPassword" class="input-control" data-i18n-placeholder="confirm_password_placeholder" placeholder="تأكيد كلمة المرور" required autocomplete="new-password" aria-describedby="confirmPassword-error">
+                                <button type="button" id="toggleConfirmPassword" class="password-toggle" aria-label="إظهار/إخفاء تأكيد كلمة المرور">
+                                    <i class="fas fa-eye-slash" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div id="confirmPassword-error" class="error-message" role="alert" aria-live="polite"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="diplome" data-i18n="diplome_label">الشهادات</label>
+                            <div class="file-input-group">
+                                <label for="diplome" class="file-input-label" tabindex="0">
+                                    <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i>
+                                    <span data-i18n="diplome_text">تحميل الشهادة</span>
+                                </label>
+                                <input type="file" id="diplome" name="diplome" class="file-input" accept="image/*,.pdf" aria-describedby="diplome-help">
+                                <div id="diplome-help" class="form-help" data-i18n="file-text">الملفات المدعومة: JPG, PNG, PDF (حد أقصى 5MB)</div>
+                                <ul class="file-list" id="fileList" aria-live="polite"></ul>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text" data-i18n="create_account_button">إنشاء حساب</span>
+                        </button>
+                    </form>
+
+                    <footer class="auth-footer">
+                        <span data-i18n="no_account">هل لديك حساب بالفعل؟</span> 
+                        <a href="login.html" data-i18n="login_link">تسجيل الدخول</a>
+                    </footer>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <div class="success-overlay" id="successOverlay" role="dialog" aria-modal="true" aria-labelledby="success-title" hidden>
+        <div class="success-modal">
+            <div class="success-icon" aria-hidden="true">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2 id="success-title" class="success-title" data-i18n="success_title">تم إنشاء الحساب بنجاح!</h2>
+            <p class="success-message" data-i18n="success_message">لقد أرسلنا رسالة تأكيد إلى بريدك الإلكتروني. يرجى التحقق من بريدك لإكمال التسجيل.</p>
+            <button type="button" class="success-button" id="successButton" data-i18n="continue_button">متابعة</button>
+        </div>
+    </div>
+    <script src="../JS/signUp.js" defer></script>
+    <script src="../JS/langueDark.js" defer></script>
+</body>
+</html>
