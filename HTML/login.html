@@ -1,43 +1,91 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="title">شركة خدمات التبريد والتكييف</title>
-    <meta name="description" data-i18n="meta_description_2" content="سجّل الدخول إلى حسابك للوصول إلى جميع الخدمات. أدخل عنوان بريدك الإلكتروني وكلمة المرور بشكل آمن. التسجيل السريع متاح.">
-    
+    <meta name="theme-color" content="#3b82f6">
+    <meta name="author" content="GlaciTech">
+
+    <title data-i18n="title">تسجيل الدخول - GlaciTech | خدمات التبريد والتكييف</title>
+    <meta name="description" data-i18n="meta_description_2"
+        content="سجّل الدخول إلى حسابك في GlaciTech للوصول إلى خدمات التبريد والتكييف الاحترافية. تسجيل آمن وسريع للفنيين المعتمدين.">
+    <meta name="keywords" content="تسجيل دخول, GlaciTech, فني تبريد, تكييف, حساب">
+
+    <link rel="canonical" href="https://glacitech.com/HTML/login.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="تسجيل الدخول - GlaciTech">
+    <meta property="og:description" content="سجّل الدخول إلى حسابك في GlaciTech للوصول إلى خدمات التبريد والتكييف">
+    <meta property="og:url" content="https://glacitech.com/HTML/login.html">
+    <meta property="og:site_name" content="GlaciTech">
+    <meta property="og:locale" content="ar_AR">
+    <meta property="og:locale:alternate" content="fr_FR">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="تسجيل الدخول - GlaciTech">
+    <meta name="twitter:description" content="سجّل الدخول إلى حسابك في GlaciTech">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "تسجيل الدخول",
+      "description": "صفحة تسجيل الدخول لخدمات GlaciTech",
+      "url": "https://glacitech.com/HTML/login.html",
+      "inLanguage": "ar",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "GlaciTech",
+        "url": "https://glacitech.com"
+      }
+    }
+    </script>
+
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
-    
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" as="style">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
 
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+        as="style">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" media="print"
+        onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap">
+    </noscript>
+
+    <link rel="stylesheet" href="../CSS/design-system.css">
     <link rel="stylesheet" href="../CSS/login.css">
-    
+</head>
+
 <body>
 
     <header>
         <nav class="navbar" role="navigation" aria-label="Navigation principale">
             <div class="nav-container">
                 <div class="language-selector">
-                    <button id="languageButton" class="language-button" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Sélectionner une langue">
+                    <button id="languageButton" class="language-button" aria-expanded="false" aria-haspopup="true">
+                        <i class="fas fa-language"></i>
                         <span id="currentLanguage">AR</span>
-                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        <i class="fas fa-chevron-down"></i>
                     </button>
-                    <ul id="languageDropdown" class="language-dropdown" role="menu" aria-labelledby="languageButton" hidden>
+                    <ul id="languageDropdown" class="language-dropdown" role="menu">
                         <li class="language-option" role="menuitem" tabindex="0" data-lang="fr">
-                            <i class="fas fa-check" aria-hidden="true"></i> 
-                            <span data-i18n="francais">الفرنسية</span>
+                            <i class="fas fa-check"></i>
+                            <span>Français</span>
                         </li>
-                        <li class="language-option" role="menuitem" tabindex="0" data-lang="ar">
-                            <i class="fas fa-check" aria-hidden="true"></i> 
-                            <span data-i18n="arabe">العربية</span>
+                        <li class="language-option selected" role="menuitem" tabindex="0" data-lang="ar">
+                            <i class="fas fa-check"></i>
+                            <span>العربية</span>
                         </li>
                     </ul>
                 </div>
@@ -48,14 +96,16 @@
                         <span class="sun" aria-hidden="true">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
                                 <g fill="#ffd43b">
-                                    <circle r="5" cy="12" cx="12"/>
-                                    <path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"/>
+                                    <circle r="5" cy="12" cx="12" />
+                                    <path
+                                        d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z" />
                                 </g>
                             </svg>
                         </span>
                         <span class="moon" aria-hidden="true">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="16" height="16">
-                                <path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/>
+                                <path
+                                    d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" />
                             </svg>
                         </span>
                     </span>
@@ -85,7 +135,9 @@
                                 <span class="input-icon" aria-hidden="true">
                                     <i class="fas fa-envelope"></i>
                                 </span>
-                                <input type="email" id="email" name="email" class="input-control" data-i18n-placeholder="email_placeholder" placeholder="أدخل بريدك الإلكتروني" required autocomplete="email" aria-describedby="email-error">
+                                <input type="email" id="email" name="email" class="input-control"
+                                    data-i18n-placeholder="email_placeholder" placeholder="أدخل بريدك الإلكتروني"
+                                    required autocomplete="email" aria-describedby="email-error">
                             </div>
                             <div id="email-error" class="error-message" role="alert" aria-live="polite"></div>
                         </div>
@@ -97,8 +149,11 @@
                                 <span class="input-icon" aria-hidden="true">
                                     <i class="fas fa-lock"></i>
                                 </span>
-                                <input type="password" id="password" name="password" class="input-control" data-i18n-placeholder="password_placeholder" placeholder="أدخل كلمة المرور" required autocomplete="new-password" aria-describedby="password-error password-help">
-                                <button type="button" id="togglePassword" class="password-toggle" aria-label="إظهار/إخفاء كلمة المرور">
+                                <input type="password" id="password" name="password" class="input-control"
+                                    data-i18n-placeholder="password_placeholder" placeholder="أدخل كلمة المرور" required
+                                    autocomplete="new-password" aria-describedby="password-error password-help">
+                                <button type="button" id="togglePassword" class="password-toggle"
+                                    aria-label="إظهار/إخفاء كلمة المرور">
                                     <i class="fas fa-eye-slash" aria-hidden="true"></i>
                                 </button>
                             </div>
@@ -110,7 +165,8 @@
                                 <input type="checkbox" id="remember" name="remember">
                                 <label for="remember" data-i18n="remember_me">تذكرني</label>
                             </div>
-                            <a href="forgot-password.html" class="forgot-password" data-i18n="forgot_password">نسيت كلمة المرور؟</a>
+                            <a href="forgot-password.html" class="forgot-password" data-i18n="forgot_password">نسيت كلمة
+                                المرور؟</a>
                         </div>
 
                         <button type="submit" class="submit-btn" data-i18n="login_link">تسجيل الدخول</button>
@@ -125,7 +181,9 @@
         </div>
     </div>
 
+    <script src="../JS/animations.js" defer></script>
     <script src="../JS/login.js" defer></script>
     <script src="../JS/langueDark.js" defer></script>
 </body>
+
 </html>

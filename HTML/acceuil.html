@@ -1,27 +1,58 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="title">شركة خدمات التبريد والتكييف</title>
-    <meta name="description" data-i18n="meta_description_3" content="خدمات تبريد وتكييف احترافية تشمل صيانة المكيفات، الثلاجات، تركيب الأجهزة، وانضمام فنيين معتمدين في جميع أنحاء المدينة.">
-    
+    <meta name="theme-color" content="#3b82f6">
+    <meta name="author" content="GlaciTech">
+
+    <title data-i18n="title">GlaciTech - حلول تبريد متكاملة | الصفحة الرئيسية</title>
+    <meta name="description" data-i18n="meta_description_3"
+        content="خدمات تبريد وتكييف احترافية تشمل صيانة المكيفات، الثلاجات، تركيب الأجهزة، وانضمام فنيين معتمدين في جميع أنحاء المدينة.">
+    <meta name="keywords" content="تبريد, تكييف, GlaciTech, صيانة, تركيب, فنيين">
+
+    <link rel="canonical" href="https://glacitech.com/HTML/acceuil.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GlaciTech - حلول تبريد متكاملة">
+    <meta property="og:description" content="خدمات تبريد وتكييف احترافية">
+    <meta property="og:url" content="https://glacitech.com/HTML/acceuil.html">
+    <meta property="og:site_name" content="GlaciTech">
+
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "الصفحة الرئيسية",
+      "url": "https://glacitech.com/HTML/acceuil.html",
+      "inLanguage": "ar"
+    }
+    </script>
+
+    <link rel="stylesheet" href="../CSS/design-system.css">
     <link rel="stylesheet" href="../CSS/acceuil.css">
-    
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+
     <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </noscript>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
                 <div class="logo-image">
-                    <img src="../images/froid.webp" data-i18n="logo_alt" alt="شعار شركة خدمات التبريد والتكييف" width="75" height="75">
+                    <img src="../images/froid.webp" data-i18n="logo_alt" alt="شعار شركة خدمات التبريد والتكييف"
+                        width="75" height="75">
                 </div>
                 <div class="logo-text">
                     <span class="company-tagline" data-i18n="company_name">GlaciTech</span>
@@ -33,22 +64,36 @@
                     <li><a href="#srv" data-i18n="nav_services">الخدمات</a></li>
                 </ul>
                 <div class="language-selector">
-                    <button id="languageButton" class="language-button" aria-expanded="false" aria-haspopup="true" aria-label="اختيار اللغة">
+                    <button id="languageButton" class="language-button" aria-expanded="false" aria-haspopup="true">
+                        <i class="fas fa-language"></i>
                         <span id="currentLanguage">AR</span>
-                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        <i class="fas fa-chevron-down"></i>
                     </button>
-                    <div id="languageDropdown" class="language-dropdown" role="menu" aria-labelledby="languageButton">
+                    <div id="languageDropdown" class="language-dropdown" role="menu">
                         <div class="language-option" role="menuitem" tabindex="0" data-lang="fr">
-                            <i class="fas fa-check" aria-hidden="true"></i> <span data-i18n="french">الفرنسية</span>
+                            <i class="fas fa-check"></i>
+                            <span>Français</span>
                         </div>
-                        <div class="language-option" role="menuitem" tabindex="0" data-lang="ar">
-                            <i class="fas fa-check" aria-hidden="true"></i> <span data-i18n="arabic">العربية</span>
+                        <div class="language-option selected" role="menuitem" tabindex="0" data-lang="ar">
+                            <i class="fas fa-check"></i>
+                            <span>العربية</span>
                         </div>
                     </div>
                 </div>
                 <label class="switch" aria-label="تبديل الوضع الداكن">
-                    <span class="sun" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
-                    <span class="moon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>
+                    <span class="sun" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <g fill="#ffd43b">
+                                <circle r="5" cy="12" cx="12"></circle>
+                                <path
+                                    d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
+                                </path>
+                            </g>
+                        </svg></span>
+                    <span class="moon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
+                            </path>
+                        </svg></span>
                     <input type="checkbox" class="input" role="switch" aria-checked="false">
                     <span class="slider"></span>
                 </label>
@@ -57,22 +102,30 @@
         <div class="hero">
             <div class="hero-content">
                 <h1 data-i18n="hero_title">حلول تبريد متكاملة لكل احتياجاتك</h1>
-                <p data-i18n="hero_description">نقدم خدمات تبريد وتكييف احترافية للمنازل والشركات باستخدام أحدث التقنيات وأعلى معايير الجودة. يمكن للعملاء تصفح الفنيين والتواصل معهم مباشرة دون الحاجة إلى تسجيل، بينما يمكن للفنيين إنشاء حساب لعرض خدماتهم والتواصل مع العملاء بكل سهولة واحترافية.</p>
+                <p data-i18n="hero_description">نقدم خدمات تبريد وتكييف احترافية للمنازل والشركات باستخدام أحدث التقنيات
+                    وأعلى معايير الجودة. يمكن للعملاء تصفح الفنيين والتواصل معهم مباشرة دون الحاجة إلى تسجيل، بينما يمكن
+                    للفنيين إنشاء حساب لعرض خدماتهم والتواصل مع العملاء بكل سهولة واحترافية.</p>
             </div>
             <div class="user-options">
                 <div class="option-section client-section">
                     <h3 data-i18n="client_section_title">للعملاء</h3>
                     <p data-i18n="client_section_desc">احصل على خدمة تبريد وتكييف ممتازة من فنيين محترفين</p>
                     <div class="buttons-group">
-                        <a href="principal.html" class="btn btn-primary" aria-label="الدخول للموقع" role="button"><i class="fas fa-sign-in-alt" aria-hidden="true"></i> <span data-i18n="enter_site">الدخول الى الموقع</span></a>
+                        <a href="principal.html" class="btn btn-primary" aria-label="الدخول للموقع" role="button"><i
+                                class="fas fa-sign-in-alt" aria-hidden="true"></i> <span data-i18n="enter_site">الدخول
+                                الى الموقع</span></a>
                     </div>
                 </div>
                 <div class="option-section technician-section">
                     <h3 data-i18n="tech_section_title">للفنيين</h3>
                     <p data-i18n="tech_section_desc">انضم إلينا كفني وابدأ في عرض خدماتك واستقبال طلبات العملاء</p>
                     <div class="buttons-group">
-                        <a href="login.html" class="btn btn-outline" aria-label="تسجيل الدخول كفني" role="button"><i class="fas fa-sign-in-alt" aria-hidden="true"></i> <span data-i18n="tech_login">تسجيل الدخول</span></a>
-                        <a href="signUp.html" class="btn btn-accent" aria-label="تسجيل كفني جديد" role="button"><i class="fas fa-user-plus" aria-hidden="true"></i> <span data-i18n="tech_signup">تسجيل حساب جديد</span></a>
+                        <a href="login.html" class="btn btn-outline" aria-label="تسجيل الدخول كفني" role="button"><i
+                                class="fas fa-sign-in-alt" aria-hidden="true"></i> <span data-i18n="tech_login">تسجيل
+                                الدخول</span></a>
+                        <a href="signUp.html" class="btn btn-accent" aria-label="تسجيل كفني جديد" role="button"><i
+                                class="fas fa-user-plus" aria-hidden="true"></i> <span data-i18n="tech_signup">تسجيل
+                                حساب جديد</span></a>
                     </div>
                 </div>
             </div>
@@ -91,22 +144,32 @@
                         <div class="info-icon"><i class="fas fa-user" aria-hidden="true"></i></div>
                         <h3 data-i18n="for_clients">للعملاء</h3>
                         <ul class="info-list">
-                            <li><span class="step-number">1</span> <span data-i18n="client_step1">ادخل مباشرة إلى الموقع وابدأ من الصفحة الرئيسية.</span></li>
-                            <li><span class="step-number">2</span> <span data-i18n="client_step2">انتقل إلى قسم "خدمات التبريد والتكييف".</span></li>
-                            <li><span class="step-number">3</span> <span data-i18n="client_step3">اختر نوع الخدمة التي تحتاجها.</span></li>
-                            <li><span class="step-number">4</span> <span data-i18n="client_step4">تصفح قائمة الفنيين المتاحين مع تقييماتهم ومعلوماتهم.</span></li>
-                            <li><span class="step-number">5</span> <span data-i18n="client_step5">تواصل مع الفني المناسب مباشرة عبر الهاتف .</span></li>
-                            <li><span class="step-number">6</span> <span data-i18n="client_step6">نرجو منك تقييم أداء الفني بعد إتمام الخدمة، فملاحظاتك تساهم في تحسين خدماتنا.</span></li>
+                            <li><span class="step-number">1</span> <span data-i18n="client_step1">ادخل مباشرة إلى الموقع
+                                    وابدأ من الصفحة الرئيسية.</span></li>
+                            <li><span class="step-number">2</span> <span data-i18n="client_step2">انتقل إلى قسم "خدمات
+                                    التبريد والتكييف".</span></li>
+                            <li><span class="step-number">3</span> <span data-i18n="client_step3">اختر نوع الخدمة التي
+                                    تحتاجها.</span></li>
+                            <li><span class="step-number">4</span> <span data-i18n="client_step4">تصفح قائمة الفنيين
+                                    المتاحين مع تقييماتهم ومعلوماتهم.</span></li>
+                            <li><span class="step-number">5</span> <span data-i18n="client_step5">تواصل مع الفني المناسب
+                                    مباشرة عبر الهاتف .</span></li>
+                            <li><span class="step-number">6</span> <span data-i18n="client_step6">نرجو منك تقييم أداء
+                                    الفني بعد إتمام الخدمة، فملاحظاتك تساهم في تحسين خدماتنا.</span></li>
                         </ul>
                     </div>
                     <div class="info-card technician-info">
                         <div class="info-icon"><i class="fas fa-tools" aria-hidden="true"></i></div>
                         <h3 data-i18n="for_techs">للفنيين</h3>
                         <ul class="info-list">
-                            <li><span class="step-number">1</span> <span data-i18n="tech_step1">سجّل كفني الآن وادخل إلى صفحتك الرئيسية للتحكم الكامل في جدولك وطلبات العملاء.</span></li>
-                            <li><span class="step-number">2</span> <span data-i18n="tech_step2">انتقل إلى قسم "خدماتنا لكل من الفنيين " ثم اضغط على "قدّم خدمتك".</span></li>
-                            <li><span class="step-number">3</span> <span data-i18n="tech_step3">املأ معلومات تخصصك، خبرتك, الدولة ..... .</span></li>
-                            <li><span class="step-number">4</span> <span data-i18n="tech_step4">انتظر اتصال العملاء بك، ونفذ الخدمات واحصل على تقييمات إيجابية.</span></li>
+                            <li><span class="step-number">1</span> <span data-i18n="tech_step1">سجّل كفني الآن وادخل إلى
+                                    صفحتك الرئيسية للتحكم الكامل في جدولك وطلبات العملاء.</span></li>
+                            <li><span class="step-number">2</span> <span data-i18n="tech_step2">انتقل إلى قسم "خدماتنا
+                                    لكل من الفنيين " ثم اضغط على "قدّم خدمتك".</span></li>
+                            <li><span class="step-number">3</span> <span data-i18n="tech_step3">املأ معلومات تخصصك،
+                                    خبرتك, الدولة ..... .</span></li>
+                            <li><span class="step-number">4</span> <span data-i18n="tech_step4">انتظر اتصال العملاء بك،
+                                    ونفذ الخدمات واحصل على تقييمات إيجابية.</span></li>
                         </ul>
                     </div>
                 </div>
@@ -123,32 +186,38 @@
                     <div class="feature-card">
                         <div class="feature-icon"><i class="fas fa-wind" aria-hidden="true"></i></div>
                         <h3 data-i18n="service1_title">تركيب أنظمة التكييف المنزلية</h3>
-                        <p data-i18n="service1_desc">خدمات تركيب احترافية لأنظمة التبريد والتكييف بكافة أنواعها مع ضمان التشغيل الأمثل والكفاءة العالية.</p>
+                        <p data-i18n="service1_desc">خدمات تركيب احترافية لأنظمة التبريد والتكييف بكافة أنواعها مع ضمان
+                            التشغيل الأمثل والكفاءة العالية.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon"><i class="fas fa-tools" aria-hidden="true"></i></div>
                         <h3 data-i18n="service2_title">صيانة دورية</h3>
-                        <p data-i18n="service2_desc">برامج صيانة وقائية شاملة للحفاظ على أنظمتك في أفضل حالاتها وإطالة عمرها التشغيلي بأقل تكلفة.</p>
+                        <p data-i18n="service2_desc">برامج صيانة وقائية شاملة للحفاظ على أنظمتك في أفضل حالاتها وإطالة
+                            عمرها التشغيلي بأقل تكلفة.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon"><i class="fas fa-snowflake" aria-hidden="true"></i></div>
                         <h3 data-i18n="service3_title">تركيب أنظمة التكييف المركزية</h3>
-                        <p data-i18n="service3_desc">نوفّر حلول تركيب متكاملة وفعالة لأنظمة التبريد المركزي، بما يناسب المنازل، الشركات، والمباني الكبيرة.</p>
+                        <p data-i18n="service3_desc">نوفّر حلول تركيب متكاملة وفعالة لأنظمة التبريد المركزي، بما يناسب
+                            المنازل، الشركات، والمباني الكبيرة.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon"><i class="fas fa-tools" aria-hidden="true"></i></div>
                         <h3 data-i18n="service4_title">صيانة أجهزة التبريد الصناعية</h3>
-                        <p data-i18n="service4_desc">خدمات صيانة شاملة لأجهزة وأنظمة التبريد الصناعية المستخدمة في المصانع والمخازن.</p>
+                        <p data-i18n="service4_desc">خدمات صيانة شاملة لأجهزة وأنظمة التبريد الصناعية المستخدمة في
+                            المصانع والمخازن.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon"><i class="fas fa-heartbeat" aria-hidden="true"></i></div>
                         <h3 data-i18n="service5_title">تبريد للقطاع الصحي</h3>
-                        <p data-i18n="service5_desc">أنظمة تبريد وتعقيم خاصة للمستشفيات والمراكز الطبية تضمن بيئة آمنة وصحية وفق المعايير العالمية.</p>
+                        <p data-i18n="service5_desc">أنظمة تبريد وتعقيم خاصة للمستشفيات والمراكز الطبية تضمن بيئة آمنة
+                            وصحية وفق المعايير العالمية.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon"><i class="fas fa-temperature-low" aria-hidden="true"></i></div>
                         <h3 data-i18n="service6_title">تركيب غرف التبريد</h3>
-                        <p data-i18n="service6_desc">نقدّم خدمات متكاملة لتركيب غرف التبريد بمختلف الأحجام والمواصفات لتلبية احتياجات التخزين.</p>
+                        <p data-i18n="service6_desc">نقدّم خدمات متكاملة لتركيب غرف التبريد بمختلف الأحجام والمواصفات
+                            لتلبية احتياجات التخزين.</p>
                     </div>
                 </div>
             </div>
@@ -160,33 +229,48 @@
             <div class="footer-content">
                 <div class="footer-section footer-about">
                     <div class="footer-logo">
-                        <img src="../images/froid.webp" data-i18n="footer_logo_alt" alt="شركة خدمات التبريد والتكييف" loading="lazy" width="48" height="48">
+                        <img src="../images/froid.webp" data-i18n="footer_logo_alt" alt="شركة خدمات التبريد والتكييف"
+                            loading="lazy" width="48" height="48">
                         <h3 data-i18n="footer_company_name">شركة خدمات التبريد</h3>
                     </div>
-                    <p data-i18n="footer_about">شركة متخصصة في تقديم خدمات التبريد والتكييف بمختلف أنواعها بأعلى معايير الجودة وأفضل الأسعار.</p>
+                    <p data-i18n="footer_about">شركة متخصصة في تقديم خدمات التبريد والتكييف بمختلف أنواعها بأعلى معايير
+                        الجودة وأفضل الأسعار.</p>
                     <div class="social-media">
-                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"
+                                aria-hidden="true"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"
+                                aria-hidden="true"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"
+                                aria-hidden="true"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"
+                                aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="footer-section footer-services">
                     <h3 data-i18n="footer_services_title">خدماتنا</h3>
                     <ul>
-                        <li><i class="fas fa-chevron-left" aria-hidden="true"></i> <span data-i18n="footer_service1">تكييف مركزي</span></li>
-                        <li><i class="fas fa-chevron-left" aria-hidden="true"></i> <span data-i18n="footer_service2">تكييف سبليت</span></li>
-                        <li><i class="fas fa-chevron-left" aria-hidden="true"></i> <span data-i18n="footer_service3">غرف التبريد</span></li>
-                        <li><i class="fas fa-chevron-left" aria-hidden="true"></i> <span data-i18n="footer_service4">وحدات التبريد</span></li>
-                        <li><i class="fas fa-chevron-left" aria-hidden="true"></i> <span data-i18n="footer_service5">أنظمة الثلج</span></li>
+                        <li><i class="fas fa-chevron-left" aria-hidden="true"></i> <span
+                                data-i18n="footer_service1">تكييف مركزي</span></li>
+                        <li><i class="fas fa-chevron-left" aria-hidden="true"></i> <span
+                                data-i18n="footer_service2">تكييف سبليت</span></li>
+                        <li><i class="fas fa-chevron-left" aria-hidden="true"></i> <span data-i18n="footer_service3">غرف
+                                التبريد</span></li>
+                        <li><i class="fas fa-chevron-left" aria-hidden="true"></i> <span
+                                data-i18n="footer_service4">وحدات التبريد</span></li>
+                        <li><i class="fas fa-chevron-left" aria-hidden="true"></i> <span
+                                data-i18n="footer_service5">أنظمة الثلج</span></li>
                     </ul>
                 </div>
                 <div class="footer-section footer-contact">
                     <h3 data-i18n="footer_contact_title">اتصل بنا</h3>
-                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <span data-i18n="footer_address">العنوان: سطيف، الجزائر</span></p>
-                    <p><i class="fas fa-phone-alt" aria-hidden="true"></i> <span data-i18n="footer_phone">الهاتف: +213 06 00 00 00 00</span></p>
-                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <span data-i18n="footer_email">البريد: info@froidservice.com</span></p>
-                    <p><i class="fas fa-clock" aria-hidden="true"></i> <span data-i18n="footer_hours">ساعات العمل: 24/7</span></p>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <span
+                            data-i18n="footer_address">العنوان: سطيف، الجزائر</span></p>
+                    <p><i class="fas fa-phone-alt" aria-hidden="true"></i> <span data-i18n="footer_phone">الهاتف: +213
+                            06 00 00 00 00</span></p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <span data-i18n="footer_email">البريد:
+                            info@froidservice.com</span></p>
+                    <p><i class="fas fa-clock" aria-hidden="true"></i> <span data-i18n="footer_hours">ساعات العمل:
+                            24/7</span></p>
                 </div>
             </div>
         </div>
@@ -196,8 +280,10 @@
             </div>
         </div>
     </footer>
-    
+
+    <script src="../JS/animations.js" defer></script>
     <script src="../JS/langueDark.js" defer></script>
     <script src="../JS/acceuil.js" defer></script>
 </body>
+
 </html>
